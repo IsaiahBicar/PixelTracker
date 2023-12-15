@@ -1,20 +1,46 @@
-# CS3640-A5
+# Purpose
+The purpose of this project was to see how frequent pixel trackers are in websites. Pixel trackers are 1x1 or 0x0 pixels used to track you and get your information.
 
-## Assignment 5: 
+---
 
-### Part 1:
+# Web Crawler for E-Commerce Sites
 
-Question: How do different types of websites (news websites, e-commerce sites, social media platforms) vary in the usage of tracking pixels "
+## Description
+This Python script is a web crawler designed to interact with multiple e-commerce websites using Selenium. It automates the process of gathering data from these sites, potentially for purposes like price comparison, product availability, and more.
 
-Interesting: tracking pixels are commonly used in online advertising to collect data about users' online behavior. Understanding their existance can shed light on the extent of user tracking and its implications for online privacy.
+## Features
+- Utilizes Selenium for web automation.
+- Targets multiple popular e-commerce platforms.
+- Can be customized for specific data extraction tasks.
 
-Importance: Acknowleding and understanding tracking pixels existance can impact a users
-experience
+## Requirements
+- Python 3.x
+- Selenium WebDriver
+- Additional Python libraries: `pandas`, `re` (regular expressions)
 
-### Part 2: 
-I am using this has a temporary Methodology. --Isaiah 
+## Installation
+1. Ensure Python 3.x is installed on your system.
+2. Install Selenium WebDriver:
+   ```
+   pip install selenium
+   ```
+3. Install other required packages:
+   ```
+   pip install pandas
+   ```
 
-For picking websites we are using the top 10 websites of each category. We are avoiding social media websites that require a login to access. Thus most of the social media sites are that of their home pages 
+## Usage
+1. Open the script in a Python IDE or a text editor.
+2. Modify the `ecommerce` list to include the URLs of the e-commerce sites you want to target.
+3. Run the script:
+   ```
+   python Webcrawler.py
+   ```
 
-For determingin the number of tracking pixels, We are determing if they have a heigh and width of 1x1 pixels. However not all pixel images are tracking pixels. Thus we are 
-getting the source url of the pixel image then using EasyList to determine if the source url is in the lsit of tracking urls. 
+## Note
+- This script uses Chrome WebDriver. Ensure Chrome is installed on your system and the WebDriver is compatible with your Chrome version.
+- The script may require adjustments depending on the specific layout and structure of the target websites.
+
+---
+
+This is a basic structure for the README. If there are specific functionalities, configurations, or detailed instructions in your script, those should be added to the README for clarity and ease of use.
